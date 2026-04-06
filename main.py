@@ -408,7 +408,7 @@ if __name__ == "__main__":
     # 创建签到实例并运行
     print("开始执行签到任务...")
     try:
-        auto_checkin = EducoderAutoCheckin(username, password)
+        auto_checkin = EducoderAutoCheckin(username, password, headless=True)
         auto_checkin.run()
     except Exception as e:
         print(f"程序执行失败: {str(e)}")
